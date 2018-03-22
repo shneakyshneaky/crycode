@@ -5,37 +5,44 @@
 
     <style type="text/css">
 
+      body
+      {
+        margin: 0;
+        padding: 0;
+      }
+
+      p
+      {
+        margin: 0;
+        padding: 0;
+      }
+
+      .square
+      {
+        width: 100px;
+        height: 100px;
+        float: left;
+        margin: 20px;
+      }
+
       .red
       {
-        color:red;
+        background-color: red;
+        border: 1px black solid;
       }
 
-      .large
+      .green
       {
-        font-size:250%;
+        background-color: green;
+        border-style: ridge solid dotted dashed;
+        border-color: green beige pink palegoldenrod;
+        border-width: 10px 5px 2px 1px;
       }
 
-      #green
+      .blue
       {
-        color:green;
-      }
-
-      .underlined
-      {
-        text-decoration: underline;
-      }
-
-      #first-section
-      {
-        color:blue;
-        background-color:pink;
-        width:50%;
-      }
-
-      #second-section
-      {
-        background-color: yellow;
-        width: 500px;
+        background-color: blue;
+        border-radius: 50%;
       }
 
     </style>
@@ -44,21 +51,9 @@
 
   <body>
 
-    <div id="first-section">
-
-      <p class="red large">The quick brown fox jumped over the lazy dog.</p>
-
-      <p class="large">Wow, I love internal CSS!</p>
-
-    </div>
-
-    <div id="second-section">
-
-      <p id="green">This is some more text. <span class="underlined">And this text is underlined.</span></p>
-
-      <h1>CSS is cool</h1>
-
-    </div>
+    <div class="red square"></div>
+    <div class="green square"></div>
+    <div class="blue square"></div>
 
   </body>
 
